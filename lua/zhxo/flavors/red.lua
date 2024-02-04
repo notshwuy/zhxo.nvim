@@ -1,4 +1,4 @@
-local shade = require("shxo.utils").shade
+local shade = require("zhxo.utils").shade
 
 return {
 	-- background colors

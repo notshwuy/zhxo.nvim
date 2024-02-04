@@ -1,6 +1,6 @@
 <div align="center">
 
-# SHXO
+# ZHXO
 
 <br/>
 <br/>
@@ -17,21 +17,21 @@
 1. Using `Lazy`:
 
 ```lua
-{ 'sxhk0/shxo.nvim' },
+{ 'sxhk0/zhxo.nvim' },
 ```
 
 2. Using `Packer`:
 
 ```lua
-use 'sxhk0/shxo.nvim'
+use 'sxhk0/zhxo.nvim'
 ```
 
 ## Configuration
 
-To configure the plugin, you can call require('shxo').setup({}), passing the table with the values in it. The following are the **defaults**:
+To configure the plugin, you can call require('zhxo').setup({}), passing the table with the values in it. The following are the **defaults**:
 
 ```lua
-require('shxo').setup({
+require('zhxo').setup({
     -- (note: if your configuration sets vim.o.background the following option will do nothing!)
     transparent = false, -- Boolean: Sets the background to transparent
     italics = {
@@ -47,7 +47,7 @@ require('shxo').setup({
 
 - **The `colorscheme()` function**
 
-This function can be used to set the colorscheme in your editor, however, if it doesn't work for you, you can always use `vim.cmd.colorscheme('shxo')`.
+This function can be used to set the colorscheme in your editor, however, if it doesn't work for you, you can always use `vim.cmd.colorscheme('zhxo')`.
 
 ### Specifics for Some Plugins
 
@@ -57,7 +57,7 @@ To use the theme with [bufferline.nvim](https://github.com/akinsho/bufferline.nv
 
 ```lua
 require('bufferline').setup({
-    highlights = require('shxo').bufferline.highlights,
+    highlights = require('zhxo').bufferline.highlights,
 })
 ```
 

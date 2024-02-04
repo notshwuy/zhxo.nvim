@@ -1,8 +1,8 @@
-local colors = require("shxo.colors")
-local config = require("shxo.config")
-local utils = require("shxo.utils")
-local bufferline = require("shxo.integrations.bufferline")
-local cmp = require("shxo.integrations.cmp")
+local colors = require("zhxo.colors")
+local config = require("zhxo.config")
+local utils = require("zhxo.utils")
+local bufferline = require("zhxo.integrations.bufferline")
+local cmp = require("zhxo.integrations.cmp")
 local theme = {}
 
 local function set_terminal_colors()
@@ -288,7 +288,7 @@ end
 
 function theme.colorscheme()
 	if vim.version().minor < 8 then
-		vim.notify("Neovim 0.8+ is required for shxo colorscheme", vim.log.levels.ERROR, { title = "Min Theme" })
+		vim.notify("Neovim 0.8+ is required for zhxo colorscheme", vim.log.levels.ERROR, { title = "Min Theme" })
 		return
 	end
 
@@ -299,7 +299,7 @@ function theme.colorscheme()
 
 	vim.g.VM_theme_set_by_colorscheme = true -- Required for Visual Multi
 	vim.o.termguicolors = true
-	vim.g.colors_name = "shxo"
+	vim.g.colors_name = "zhxo"
 
 	set_terminal_colors()
 	set_groups()

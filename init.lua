@@ -227,7 +227,7 @@ require("lazy").setup({
       opts = {
         options = {
           icons_enabled = true,
-          colorscheme = "shxo",
+          colorscheme = "zhxo",
         },
       },
     },
@@ -259,7 +259,7 @@ vim.keymap.set('n', ';f', function()
   }, theme))
 end, opts)
 
-local theme = require("shxo/init")
+local theme = require("zhxo/init")
 
 theme.setup({
 	transparent = false,

@@ -1,4 +1,4 @@
-local colors = require("shxo.colors")
+local colors = require("zhxo.colors")
 
 local M = {}
 
