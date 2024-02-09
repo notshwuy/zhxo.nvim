@@ -226,7 +226,7 @@ local function set_groups()
 		["@type"] = { link = "Type" },
 		["@type.definition"] = { fg = colors.fg },
 		["@type.builtin"] = { fg = colors.yellow },
-		["@type.qualifier"] = { fg = colors.yellow },
+		["@type.qualifier"] = { fg = colors.primary },
 		["@keyword"] = { link = "Keyword" },
 		-- ["@storageclass"] = {},
 		-- ["@structure"] = {},
@@ -252,7 +252,7 @@ local function set_groups()
 		-- semantic highlighting
 		["@lsp.type.namespace"] = { link = "@namespace" },
 		["@lsp.type.type"] = { link = "@type" },
-		["@lsp.type.class"] = { link = "@type" },
+		["@lsp.type.class"] = { link = "@method" },
 		["@lsp.type.enum"] = { link = "@type" },
 		["@lsp.type.interface"] = { link = "@type" },
 		["@lsp.type.struct"] = { link = "@type" },
@@ -265,6 +265,7 @@ local function set_groups()
 		["@lsp.type.decorator"] = { link = "@label" },
 		["@lsp.typemod.function.declaration"] = { link = "@function" },
 		["@lsp.typemod.function.readonly"] = { link = "@function" },
+		["@lsp.typemod.class.declaration"] = { link = "@type" },
 	}
 
   -- integrations
