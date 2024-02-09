@@ -23,6 +23,12 @@ return {
 	borderFocus = shade("#858585", 0.9),
 	borderDarker = shade("#858585", 0.6),
 
+  -- diagnostic colors
+  error = shade("#f41777", 0.9),
+  warn = shade("#f47771", 0.9),
+  info = shade("#7577ff", 0.9),
+  hint = shade("#cbbce6", 0.9),
+
 	-- ui colors
 	red = "#e08282",
 	blue = "#7577ff",
@@ -31,7 +37,6 @@ return {
 	blueLight = "#7577ff",
 	orangeLight = "#f47771",
 	yellow = "#f7eae2",
-  redDark = shade("#f41777", 0.9),
 	green = "#6ff2ae",
 	purpleDark = "#7577ff",
 	comment = "#9a9ea3",

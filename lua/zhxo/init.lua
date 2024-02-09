@@ -15,7 +15,7 @@ local function set_terminal_colors()
 	vim.g.terminal_color_6 = colors.blueLight
 	vim.g.terminal_color_7 = colors.fg
 	vim.g.terminal_color_8 = colors.fgInactive
-	vim.g.terminal_color_9 = colors.redDark
+	vim.g.terminal_color_9 = colors.error
 	vim.g.terminal_color_10 = colors.orangeLight
 	vim.g.terminal_color_11 = colors.orange
 	vim.g.terminal_color_12 = colors.symbol
@@ -52,7 +52,7 @@ local function set_groups()
 		EndOfBuffer = { fg = colors.purple },
 		TermCursor = { link = "Cursor" },
 		TermCursorNC = { link = "Cursor" },
-		ErrorMsg = { fg = colors.redDark },
+		ErrorMsg = { fg = colors.error },
 		VertSplit = { fg = colors.border, bg = bg },
 		Winseparator = { link = "VertSplit" },
 		SignColumn = { link = "Normal" },
@@ -82,14 +82,14 @@ local function set_groups()
 		TabLineFill = { link = "TabLine" },
 		TabLineSel = { bg = colors.bg, fg = colors.fgAlt },
 		Search = { bg = utils.shade(colors.orangeLight, 0.40, colors.bg) },
-		SpellBad = { undercurl = true, sp = colors.redDark },
+		SpellBad = { undercurl = true, sp = colors.error },
 		SpellCap = { undercurl = true, sp = colors.blue },
 		SpellLocal = { undercurl = true, sp = colors.purple },
 		SpellRare = { undercurl = true, sp = colors.yellow },
 		Title = { fg = colors.blue },
 		Visual = { bg = utils.shade(colors.blue, 0.40, colors.bg) },
 		VisualNOS = { link = "Visual" },
-		WarningMsg = { fg = colors.orange },
+		WarningMsg = { fg = colors.warn },
 		Whitespace = { fg = colors.symbol },
 		WildMenu = { bg = colors.bgOption },
 		Comment = { fg = colors.comment, italic = config.italics.comments or false },
@@ -155,8 +155,8 @@ local function set_groups()
 
 		DiagnosticError = { link = "Error" },
 		DiagnosticWarn = { link = "WarningMsg" },
-		DiagnosticInfo = { fg = colors.blue },
-		DiagnosticHint = { fg = colors.yellow },
+		DiagnosticInfo = { fg = colors.info },
+		DiagnosticHint = { fg = colors.hint },
 		DiagnosticVirtualTextError = { link = "DiagnosticError" },
 		DiagnosticVirtualTextWarn = { link = "DiagnosticWarn" },
 		DiagnosticVirtualTextInfo = { link = "DiagnosticInfo" },
